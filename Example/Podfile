@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DeckOCards_Example', :exclusive => true do
+  pod "DeckOCards", :path => "../"
+end
+
+target 'DeckOCards_Tests', :exclusive => true do
+  pod "DeckOCards", :path => "../"
+
+  pod 'Quick', '~> 0.3.1'
+  pod 'Nimble'
+end
