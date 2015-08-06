@@ -1,0 +1,6 @@
+framework module DeckOCards {
+  umbrella header "DeckOCards-umbrella.h"
+
+  export *
+  module * { export * }
+}

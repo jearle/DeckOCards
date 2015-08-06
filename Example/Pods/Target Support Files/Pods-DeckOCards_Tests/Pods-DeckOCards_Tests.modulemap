@@ -1,0 +1,6 @@
+framework module Pods_DeckOCards_Tests {
+  umbrella header "Pods-DeckOCards_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

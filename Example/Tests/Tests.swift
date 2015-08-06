@@ -5,46 +5,32 @@ import Nimble
 import DeckOCards
 
 class TableOfContentsSpec: QuickSpec {
+    
     override func spec() {
-        describe("these will fail") {
+        
+        describe("DeckOCards") {
 
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+            it("creates a deck with 52 cards") {
+            
+                expect(createDeck().count)
+                    .to(equal(52))
+                
             }
             
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
+            it("shuffles the deck") {
+                
+                let deck = shuffledDeck()
+                
+                for card in deck {
+                    
+                    println(card)
+                    
                 }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    dispatch_async(dispatch_get_main_queue()) {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        NSThread.sleepForTimeInterval(0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+                
+                
             }
+            
         }
+        
     }
 }

@@ -1,0 +1,6 @@
+framework module Pods_DeckOCards_Example {
+  umbrella header "Pods-DeckOCards_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
