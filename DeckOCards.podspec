@@ -8,21 +8,16 @@
 #
 
 Pod::Spec.new do |s|
+  
   s.name             = "DeckOCards"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of DeckOCards."
-  s.description      = <<-DESC
-                       An optional longer description of DeckOCards
+  s.version          = "0.0.1"
+  s.summary          = "A Library That Creates and Shuffles a Deck of Cards"
+  s.homepage         = "https://github.com/jearle/DeckOCards"
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DeckOCards"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Jesse Earle" => "earle.jesse@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DeckOCards.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/jearle/DeckOCards.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/littlebigberry'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -32,7 +27,4 @@ Pod::Spec.new do |s|
     'DeckOCards' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
